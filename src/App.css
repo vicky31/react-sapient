@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
+@import "./assets/colors.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fluid {
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.SpaceXWrapper {
+  margin: 0 auto;
+  max-width: 1440px;
   min-height: 100vh;
+  background-color: var(--appBackground);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.heading {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.page-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
+}
+.filters-wrapper {
+  flex: 1;
+  display: flex;
+}
+.result-wrapper {
+  flex: 3;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: var(--appBackground);
+}
+.data-grid {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1023px) {
+  .data-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 700px) {
+  .App-header {
+    font-size: 40px;
+  }
+  .page-wrapper{
+    flex-direction: column;
+  }
+  .data-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .result-wrapper {
+    margin-left: 0px;
   }
 }

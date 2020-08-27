@@ -1,0 +1,65 @@
+.flight-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.flight-container {
+  display: flex;
+  border-radius: 15px;
+  width: 100%;
+}
+.area {
+  margin-top: 15px;
+}
+.image-wrapper {
+  background-color: var(--appBackground);
+}
+.mission-name {
+  color: #474c83;
+  font-weight: bolder;
+}
+.mission-title {
+  display: flex;
+  flex: 1.5;
+  font-weight: bolder;
+}
+.mission-content {
+  flex: 1;
+  color: #474c83;
+  text-align: end;
+}
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  .flight-wrapper {
+    width: auto;
+    min-width: 180px;
+    max-width: 220px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 1023px) {
+  .flight-wrapper {
+    width: auto;
+    min-width: 150px;
+    max-width: 260px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 1390px) {
+  .flight-wrapper {
+    width: 220px;
+  }
+}
